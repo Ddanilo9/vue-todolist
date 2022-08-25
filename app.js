@@ -36,6 +36,14 @@ const app = new Vue ({
             })
             this.newTask = ''
         }
+       },
+       enterF(event){
+        if (event.key ==='Enter' && this.newTask != this.newTask.length<0){
+            this.todos.push({
+                text: this.newTask,
+                done: false
+            })
+        }
        }
     },
 })

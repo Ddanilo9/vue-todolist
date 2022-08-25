@@ -23,7 +23,7 @@
 
             <main>
                 <div class="container new-todo-wrapper">
-                    <input type="text" placeholder="fare..." v-model="newTask">
+                    <input type="text" placeholder="fare..." v-model="newTask" @keypress="enterF">
                     <input class="button" type="button" value="Aggiungi" @click="addNewTask"></input>
                 </div>
             </main>
