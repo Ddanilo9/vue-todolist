@@ -35,18 +35,11 @@
                  :class="[todo.done  ? 'done' : '' ,'todo']">
                  
                     {{todo.text}}
-                    <i class="fa-solid fa-xmark" @click="isDoneOnOff(todo)"></i>
+                    <i :class="[todo.done ? 'fa-solid fa-xmark' : 'fa-solid fa-check']" 
+                    @click="isDoneOnOff(todo)"></i>
                 </li>
-                <!-- <li class="todo">Andare al ristorante
-                    <i class="fa-solid fa-xmark"></i>
-                </li>
-                <li class="todo done">Fare la doccia
-                    <i class="fa-solid fa-xmark"></i>
-                </li>
-                <li class="todo">dare da mangiare al cane
-                    <i class="fa-solid fa-xmark"></i>
-                </li> -->
             </ul>
+
         </div>
       </div>
     </main>

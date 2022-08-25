@@ -1,7 +1,7 @@
 const todos = [
     {
         text:'Fare i compiti',
-        done: true
+        done: false
     },
     {
         text:'Fare la spesa',
@@ -22,22 +22,20 @@ const app = new Vue ({
     data: {
         todos: todos,
         newTask: '',
+        
     },
     methods: {
        isDoneOnOff(todo){
         todo.done = !todo.done
        },
        addNewTask(){
-        if (this.newTask != this.newTask.length<0){
-                        
+        if (this.newTask != this.newTask.length<0){           
             this.todos.push({
                 text: this.newTask,
                 done: false
             })
-
             this.newTask = ''
         }
-        
        }
     },
 })
