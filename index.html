@@ -23,16 +23,19 @@
 
             <main>
                 <div class="container new-todo-wrapper">
-                    <input type="text" placeholder="fare...">
-                    <input class="button" type="button" value="Aggiungi"></input>
+                    <input type="text" placeholder="fare..." v-model="newTask">
+                    <input class="button" type="button" value="Aggiungi" @click="addNewTask"></input>
                 </div>
             </main>
         </div>
-
+        
         <div class="container">
             <ul class="todolist">
-                <li class="todo">Fare la spesa
-                    <i class="fa-solid fa-xmark"></i>
+                <li v-for="todo in todos"
+                 :class="[todo.done  ? 'done' : '' ,'todo']">
+                 
+                    {{todo.text}}
+                    <i class="fa-solid fa-xmark" @click="isDoneOnOff(todo)"></i>
                 </li>
                 <!-- <li class="todo">Andare al ristorante
                     <i class="fa-solid fa-xmark"></i>
