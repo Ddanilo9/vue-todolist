@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, menu{
+    list-style: none;
+}
+html {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    background-color:  rgb(184, 185, 236);
+}
+
+.container{
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+
+
+.todo{
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 10px;
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-todo-wrapper{
+    padding: 24px 0;
+}
+
+.todolist{
+    padding: 24px 0;
+}
+
+input{
+    display: inline-block;
+    line-height: 32px;
+    border-radius: 3px;
+    border: none;
+    padding: 0 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.done{
+    text-decoration: line-through;
+    color: green;
+}
+
+.button{
+    background-color: rgb(90, 84, 84);
+    color: white;
+    cursor: pointer;
+}
+
+li{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.fa-xmark{
+    cursor: pointer;
+}
